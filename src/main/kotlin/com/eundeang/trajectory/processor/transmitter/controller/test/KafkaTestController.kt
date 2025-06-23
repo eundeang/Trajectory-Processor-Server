@@ -12,9 +12,9 @@ class KafkaTestController(
     private val producer: TestProducer
 ) {
 
-    @PostMapping("/send")
-    fun send(@RequestParam msg: String): String {
-        producer.sendMessage(msg)
-        return "메시지 전송: $msg"
-    }
+//    @PostMapping("/send")
+//    fun send(@RequestParam msg: String): String {
+//        producer.sendMessage(msg)
+//        return "메시지 전송: $msg"
+//    }
 }

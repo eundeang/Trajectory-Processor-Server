@@ -27,6 +27,9 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation ("org.springframework.kafka:spring-kafka") // Spring Kafka 의존성 추가
+	implementation("org.springframework.boot:spring-boot-starter-webflux") // osrm 서버 http 호출을 위한 의존성
+	implementation("org.springframework.boot:spring-boot-starter-data-redis-reactive")
+	implementation("io.lettuce:lettuce-core")
 }
 
 kotlin {
